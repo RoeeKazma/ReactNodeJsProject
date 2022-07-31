@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { deleteCard } from "../services/cardsService";
 
 const Card = ({
   card: { _id, bizName, bizDescription, bizAddress, bizPhone, bizImage },
@@ -23,6 +24,7 @@ const Card = ({
         </Link>
         <Link
           to={`/my-cards/delete/${_id}`}
+          onClick={deleteCard(_id)}
           className="card-link btn btn-primary"
         >
           Delete

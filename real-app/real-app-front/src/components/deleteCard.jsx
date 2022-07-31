@@ -1,5 +1,5 @@
 const DeleteCard = () => {
-  return <p>Delete</p>;
+  return <p>Card Deleted</p>;
 };
 
 export default DeleteCard;
